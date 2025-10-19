@@ -4,29 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Deku Trees — Fruit Tree Nursery</title>
-  <meta name="description" content="Deku Trees — a small, family-run nursery specializing in hardy fruit trees." />
+  <title>Deku Trees — Current Availability</title>
+  <meta name="description" content="Deku Trees — current availability of landscape trees and fruit trees." />
   <style>
-    :root { --bg:#faf8f5; --ink:#1f2a1f; --accent:#2f6b3b; --muted:#8aa68f; --card:#ffffff; }
+    :root { --bg:#faf8f5; --ink:#1f2a1f; --accent:#2f6b3b; --muted:#5a6a5c; --card:#ffffff; }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
     .container{max-width:1100px;margin:0 auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0 18px}
     .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
     .logo{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #3d7a45, #1e4d2b);display:grid;place-items:center;color:#fff;font-weight:700}
     .brand h1{font-size:1.4rem;margin:0}
     nav a{margin-left:16px;text-decoration:none;color:var(--ink);border-bottom:2px solid transparent}
     nav a:hover{border-color:var(--accent)}
-    .hero{background:linear-gradient(180deg, rgba(47,107,59,0.07), transparent);border-radius:20px;padding:28px;margin:10px 0 24px}
-    .hero h2{margin:0 0 8px;font-size:2rem}
-    .hero p{margin:0 0 16px;color:#364336}
-    .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:10px 16px;border-radius:12px;font-weight:600}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
+    .hero{background:linear-gradient(180deg, rgba(47,107,59,0.07), transparent);border-radius:20px;padding:24px;margin:6px 0 22px}
+    .hero h2{margin:0 0 6px;font-size:1.9rem}
+    .hero p{margin:0;color:var(--muted)}
+    .section{margin-top:22px}
+    .section h3{margin-bottom:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
     .card{background:var(--card);border:1px solid #e7e4df;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px}
     .tag{display:inline-block;background:#e9f2ec;color:#2d5a36;border-radius:999px;padding:2px 10px;font-size:.8rem}
+    .muted{color:var(--muted)}
     .price{font-weight:700;color:var(--accent)}
+    .qty{font-size:.9rem;color:#314436}
     footer{margin-top:36px;padding:24px 0;color:#415142;font-size:.9rem}
-    .muted{color:#5a6a5c}
     .note{background:#fff3cd;border:1px solid #ffe08a;color:#775d00;padding:8px 12px;border-radius:12px;font-size:.9rem}
   </style>
 </head>
@@ -37,62 +39,92 @@
         <div class="logo" aria-hidden="true">DT</div>
         <div>
           <h1>Deku Trees</h1>
-          <div class="muted" style="margin-top:-4px;">Family-run fruit tree nursery</div>
+          <div class="muted" style="margin-top:-4px;">Current Availability</div>
         </div>
       </a>
       <nav>
         <a href="./">Home</a>
-        <a href="#catalog">Trees</a>
-        <a href="./order.html">Order / Pre‑Order</a>
+        <a href="#landscape">Landscape Trees</a>
+        <a href="#fruit">Fruit Trees</a>
+        <a href="./order.html">Order / Pre-Order</a>
       </nav>
     </header>
 
     <section class="hero">
-      <h2>Hardy, delicious fruit trees — ready to plant</h2>
-      <p>We’re a small, family-run nursery. Every tree is cared for by hand and selected for quality, resilience, and flavour.</p>
-      <a class="cta" href="./order.html">Order / Join the waitlist</a>
+      <h2>In stock and ready to reserve</h2>
+      <p>Listed inventory is updated frequently. Quantities are limited; use the order form to reserve. Pickup in Rockwood, ON; local delivery and planting available.</p>
     </section>
 
-    <section id="catalog">
-      <h3>Available Now</h3>
+    <section id="landscape" class="section">
+      <h3>Landscape Trees</h3>
       <div class="grid">
-        <!-- Duplicate/modify cards as needed -->
+
         <article class="card">
-          <div class="tag">Semi-dwarf · Zone 5</div>
-          <h4>Apple — Honeycrisp (7–10 gal)</h4>
-          <div class="muted">Crisp, sweet-tart flavour. Great for fresh eating. Needs pollinator.</div>
-          <div class="price">$95</div>
+          <div class="tag">Deciduous conifer · Moist sites</div>
+          <h4>Bald Cypress <span class="muted">(<em>Taxodium distichum</em>)</span></h4>
+          <div class="muted">Fast-growing, adaptable tree that tolerates wet soils and seasonal flooding; feathery foliage turns bronze in fall.</div>
+          <div class="qty">Size: 6–12&quot; · Qty: 500</div>
+          <div class="price">$7</div>
         </article>
 
         <article class="card">
-          <div class="tag">Semi-dwarf · Zone 5</div>
-          <h4>Pear — Bartlett (5–7 gal)</h4>
-          <div class="muted">Classic, juicy dessert pear. Reliable and productive.</div>
-          <div class="price">$85</div>
+          <div class="tag">Deciduous conifer · Fast-growing</div>
+          <h4>Metasequoia (Dawn Redwood) <span class="muted">(<em>Metasequoia glyptostroboides</em>)</span></h4>
+          <div class="muted">Graceful, pyramidal form with soft needles that drop in fall; prefers full sun and moist, well‑drained soil.</div>
+          <div class="qty">Size: 6–12&quot; · Qty: 1,500</div>
+          <div class="price">$7</div>
         </article>
 
         <article class="card">
-          <div class="tag">Self‑fertile · Zone 5</div>
-          <h4>Cherry — Stella (7 gal)</h4>
-          <div class="muted">Large, dark red cherries. Great for small yards.</div>
-          <div class="price">$110</div>
+          <div class="tag">Nitrogen‑fixing · Hardy</div>
+          <h4>Black Locust <span class="muted">(<em>Robinia pseudoacacia</em>)</span></h4>
+          <div class="muted">Tough, fast-growing tree with fragrant late‑spring flowers; fixes nitrogen and tolerates poor soils. (Can spread by suckers.)</div>
+          <div class="qty">Size: 3–5 ft · Qty: 3</div>
+          <div class="price">$20</div>
         </article>
 
         <article class="card">
-          <div class="tag">Cold-hardy · Zone 4</div>
-          <h4>Plum — Mount Royal (5 gal)</h4>
-          <div class="muted">Blue plum with sweet flesh; excellent for fresh eating & preserves.</div>
-          <div class="price">$90</div>
+          <div class="tag">Distinct form · Moist soils</div>
+          <h4>Corkscrew Willow <span class="muted">(<em>Salix matsudana ‘Tortuosa’</em>)</span></h4>
+          <div class="muted">Striking, contorted branches and twigs; very fast growth and best with consistent moisture. Excellent winter interest.</div>
+          <div class="qty">Size: 5–8 ft · Qty: 31</div>
+          <div class="price">$20</div>
         </article>
+
       </div>
+    </section>
 
-      <p class="note" style="margin-top:14px;">
-        Want something specific? Use the order form to request varieties. We’ll confirm stock, pickup dates in Rockwood, and payment (e‑transfer on pickup).
+    <section id="fruit" class="section">
+      <h3>Fruit Trees</h3>
+      <div class="grid">
+
+        <article class="card">
+          <div class="tag">Seedling · Full sun</div>
+          <h4>Peach Seedling <span class="muted">(<em>Prunus persica</em>)</span></h4>
+          <div class="muted">Seed-grown peach for grafting or trial planting; fruit traits vary. Requires full sun and a warm, protected site.</div>
+          <div class="qty">Size: 36&quot; · Qty: 8</div>
+          <div class="price">$25</div>
+        </article>
+
+        <article class="card">
+          <div class="tag">Seedling · Warm climate</div>
+          <h4>Almond Seedling <span class="muted">(<em>Prunus dulcis</em>)</span></h4>
+          <div class="muted">Seed-grown almond; nut quality and bearing vary. Needs long, warm seasons and excellent drainage; most types need a second tree for pollination.</div>
+          <div class="qty">Size: 3–5 ft · Qty: 25</div>
+          <div class="price">$35</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="note">
+        Services: Delivery within our area (fee applies) and optional professional planting. Consultations available with or without purchase — provided by a licensed arborist with ~20 years’ experience.
       </p>
     </section>
 
     <footer>
-      <div>© <span id="year"></span> Deku Trees. Rockwood, Ontario. · <a href="./order.html">Order / Pre‑Order</a></div>
+      <div>© <span id="year"></span> Deku Trees · Rockwood, Ontario · <a href="./order.html">Order / Pre‑Order</a></div>
     </footer>
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
