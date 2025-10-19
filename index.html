@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deku Trees — Fruit Tree Nursery</title>
+  <meta name="description" content="Deku Trees — a small, family-run nursery specializing in hardy fruit trees." />
+  <style>
+    :root { --bg:#faf8f5; --ink:#1f2a1f; --accent:#2f6b3b; --muted:#8aa68f; --card:#ffffff; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+    .logo{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #3d7a45, #1e4d2b);display:grid;place-items:center;color:#fff;font-weight:700}
+    .brand h1{font-size:1.4rem;margin:0}
+    nav a{margin-left:16px;text-decoration:none;color:var(--ink);border-bottom:2px solid transparent}
+    nav a:hover{border-color:var(--accent)}
+    .hero{background:linear-gradient(180deg, rgba(47,107,59,0.07), transparent);border-radius:20px;padding:28px;margin:10px 0 24px}
+    .hero h2{margin:0 0 8px;font-size:2rem}
+    .hero p{margin:0 0 16px;color:#364336}
+    .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:10px 16px;border-radius:12px;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
+    .card{background:var(--card);border:1px solid #e7e4df;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px}
+    .tag{display:inline-block;background:#e9f2ec;color:#2d5a36;border-radius:999px;padding:2px 10px;font-size:.8rem}
+    .price{font-weight:700;color:var(--accent)}
+    footer{margin-top:36px;padding:24px 0;color:#415142;font-size:.9rem}
+    .muted{color:#5a6a5c}
+    .note{background:#fff3cd;border:1px solid #ffe08a;color:#775d00;padding:8px 12px;border-radius:12px;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="./">
+        <div class="logo" aria-hidden="true">DT</div>
+        <div>
+          <h1>Deku Trees</h1>
+          <div class="muted" style="margin-top:-4px;">Family-run fruit tree nursery</div>
+        </div>
+      </a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="#catalog">Trees</a>
+        <a href="./order.html">Order / Pre‑Order</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Hardy, delicious fruit trees — ready to plant</h2>
+      <p>We’re a small, family-run nursery. Every tree is cared for by hand and selected for quality, resilience, and flavour.</p>
+      <a class="cta" href="./order.html">Order / Join the waitlist</a>
+    </section>
+
+    <section id="catalog">
+      <h3>Available Now</h3>
+      <div class="grid">
+        <!-- Duplicate/modify cards as needed -->
+        <article class="card">
+          <div class="tag">Semi-dwarf · Zone 5</div>
+          <h4>Apple — Honeycrisp (7–10 gal)</h4>
+          <div class="muted">Crisp, sweet-tart flavour. Great for fresh eating. Needs pollinator.</div>
+          <div class="price">$95</div>
+        </article>
+
+        <article class="card">
+          <div class="tag">Semi-dwarf · Zone 5</div>
+          <h4>Pear — Bartlett (5–7 gal)</h4>
+          <div class="muted">Classic, juicy dessert pear. Reliable and productive.</div>
+          <div class="price">$85</div>
+        </article>
+
+        <article class="card">
+          <div class="tag">Self‑fertile · Zone 5</div>
+          <h4>Cherry — Stella (7 gal)</h4>
+          <div class="muted">Large, dark red cherries. Great for small yards.</div>
+          <div class="price">$110</div>
+        </article>
+
+        <article class="card">
+          <div class="tag">Cold-hardy · Zone 4</div>
+          <h4>Plum — Mount Royal (5 gal)</h4>
+          <div class="muted">Blue plum with sweet flesh; excellent for fresh eating & preserves.</div>
+          <div class="price">$90</div>
+        </article>
+      </div>
+
+      <p class="note" style="margin-top:14px;">
+        Want something specific? Use the order form to request varieties. We’ll confirm stock, pickup dates in Rockwood, and payment (e‑transfer on pickup).
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Deku Trees. Rockwood, Ontario. · <a href="./order.html">Order / Pre‑Order</a></div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
